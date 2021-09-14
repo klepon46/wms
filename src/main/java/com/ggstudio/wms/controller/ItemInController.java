@@ -10,7 +10,7 @@ public class ItemInController {
 
     @GetMapping("/index")
     public String index(){
-        return "in/index";
+        return "in/index" ;
     }
 
 
