@@ -1,12 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Barang Masuk</title>
+
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/bootstrap-grid.min.css}">
+    <link rel="stylesheet" th:href="@{/css/jquery.bootgrid.min.css}">
 </head>
 <body>
 
-<h1>Barang Masuk</h1>
+<div class="container">
+    <h1>Barang Masuk</h1>
 
+    <div class="row">
+
+        <div class="mb-3 col-md-3">
+            <label for="namaBarang" class="form-label">Nama Barang</label>
+            <input type="text" class="form-control" id="namaBarang" placeholder="Con: Guling uk 90">
+        </div>
+
+        <div class="mb-3 col-md-3" >
+            <label  class="form-label" >Email address</label>
+            <input type="number" class="form-control" id="qtyBarang" placeholder="con: 1" >
+        </div>
+
+        <div class="mb-3 col-md-2">
+            <label class="form-label" for="btnTambahIn" style="visibility:hidden">Email address</label>
+            <input type="button" class="btn btn-info" id="btnTambahIn" value="Tambah" />
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="mb-3 col-md-12">
+            <label for="keterangan" class="form-label">Keterangan</label>
+            <textarea class="form-control" id="keterangan" rows="3" placeholder="Con: Truk 1"></textarea>
+        </div>
+    </div>
+</div>
+
+
+<script th:src="@{/js/jquery.js}"></script>
+<script th:src="@{/js/popper.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/barangMasuk.js}"></script>
 </body>
 </html>
